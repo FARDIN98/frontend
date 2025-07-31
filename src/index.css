@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f9fafb;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .prose {
+    max-width: none;
+  }
+  
+  .prose h1 {
+    @apply text-2xl font-bold mb-4;
+  }
+  
+  .prose h2 {
+    @apply text-xl font-semibold mb-3;
+  }
+  
+  .prose h3 {
+    @apply text-lg font-medium mb-2;
+  }
+  
+  .prose p {
+    @apply mb-2;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-6 mb-2;
+  }
+  
+  .prose ol {
+    @apply list-decimal pl-6 mb-2;
+  }
+  
+  .prose li {
+    @apply mb-1;
+  }
+  
+  .prose strong {
+    @apply font-semibold;
+  }
+  
+  .prose em {
+    @apply italic;
+  }
+  
+  .prose code {
+    @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
+  }
+  
+  .prose pre {
+    @apply bg-gray-100 p-3 rounded overflow-x-auto;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic;
+  }
+}
